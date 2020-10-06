@@ -21,7 +21,7 @@ inclua biblioteca Matematica --> mat
 		cadeia produtos[] = {"Camisa","Calça","Camiseta","Vestido"}
 		real precos[] = {80.00,100.00 , 40.00, 80.00}
 		inteiro x = 0
-		inteiro codigo
+		inteiro codigo = 0
 		inteiro pgto = 0
 		real precoFinal = 0
 		real parcela
@@ -80,7 +80,7 @@ inclua biblioteca Matematica --> mat
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 829; 
+ * @POSICAO-CURSOR = 814; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
