@@ -1,8 +1,8 @@
-package ExerciciosListas;
+package lista1condicionais;
 
 import java.util.Scanner;
 
-public class Exercicio1Lacos {
+public class Exercicio1Condicionais {
 
 	public static void main(String[] args) {
 		/*
