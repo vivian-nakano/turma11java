@@ -1,4 +1,4 @@
-package portugol;
+package listaPortugol;
 import java.util.Scanner;
 public class Lista1Exercicio2 {
 	public static void main(String[] args) {

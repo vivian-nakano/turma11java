@@ -1,71 +1,39 @@
 package exerciciosAula;
 
 import java.util.Scanner;
-
 public class ExercicioAlunosNotaVetor {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		String alunos[] = {"", "Bruna dos Santos", "Bruno Correia da Costa", "Bruno de Freitas Sousa", "Carla Cristina Conceição de Paula", "Christian Garcia Amantino", "Cleiton Ortega dos Santos", "Debora Miranda Carmona", "Everton Luiz Rosário de Oliveira", "Gabriel Reis Ritter", "Gildenor Junior da Silva Costa", "Guilherme Marcionilo Pedroso do Rosario Silva", "Herick Willians Canhete Rocha", "Jacqueline Alves Barbosa", "João Victor dos Santos Rigoleto", "Jonas De Oliveira Santos", "Jonathan Cavalcanti De Paula", "Juliana Cavalaro de Oliveira", "Karina Soares Lima", "Larissa Meira Dominguez", "Leonardo Iamur Terra", "Lysandro Andrade Martin", "Matheus Araujo de moraes", "Matheus Fernandes Rodrigues", "Matheus Trindade Torok", "Mônica dos santos ribeiro", "Natália Lopes moreno", "Phelipe Almeida de Souza", "Rafaela de Albuquerque", "Ricardo Martins Corrêa", "Sarah Lidia De Oliveira Braia", "Stefanie Dias Costa", "Tiago Diniz Gomes", "Victor Augusto de Souza Tavares", "Vivian Rodrigues Nakano", "Washington pereira dos santos", "Wellington Vieira", "Wesley Bueno da Silva", "Yago Tonoli Domingues", "Zaine de Queiros Jesus"};
+		int notas[][] = new int[40][5];
+		char continua = 'S';
+		int codigoAluno, nota, bimestre;
 		
-		Scanner tec = new Scanner(System.in);
+		do {
 		
-		int notas [] = new int [38], contador = 0;
-		String alunos [] = new String [38];
-		char verificador = ' ';
-		
-		while (true) {
-			System.out.println("Qual o primeiro aluno? ");
-			
-			System.out.println("Qual a nota do aluno? ");
-			notas = tec.nextInt();
-			
-			System.out.println("Continua Sim (S) ou Não (N)");
-			verificador = entrada.next().toUpperCase().charAt(0);
-			
-			if (verificador != 'S') {
-				break 
-			}
-		}
-	
-		
-		
-	}
-
-}
-
-/*
- * Vector notas = new Vector(2);
-		Vector<String> alunos = new Vector<>();
-		int contador = 0;
-		char verificador;
-		
-		Scanner entrada = new Scanner(System.in);
-		
-		while(true) {
-			
-			System.out.println("Qual é o aluno?");
-			alunos.add(entrada.next());
-			
-			System.out.println("Qual a nota do aluno?");
-			notas.add(entrada.nextInt());
-			
-			System.out.println("Continua, Sim(S) ou Não(N)?");
-			verificador = entrada.next().toUpperCase().charAt(0);
-			
-			if(verificador != 'S') {
-				break;
+			for (int i = 1; i < alunos.length; i++) {
+				System.out.printf("Nota: 1º %d 2º %d 3º %d 4º %d // Código: %d - Nome: %s \n", notas[i][1], notas[i][2], notas[i][3], notas[i][4], i, alunos[i]);
 			}
 			
-			contador++;
+			System.out.printf("Escolha um(a) aluno(a) pelo código: ");
+			codigoAluno = scanner.nextInt();
+			System.out.print("Qual bimestre (1, 2, 3, 4)?: ");
+			bimestre = scanner.nextInt();
+			
+			System.out.printf("Qual a nota de %s nesse bimestre?", alunos[codigoAluno]);
+			nota = scanner.nextInt();
+			
+			notas[codigoAluno][bimestre] = nota;
+			
+			System.out.print("Continua Sim ou Não? ");
+			continua = scanner.next().toUpperCase().charAt(0);
+			
+		} while (continua == 'S');
+		
+		for (int i = 1; i < alunos.length; i++) {
+			System.out.printf("Nota: 1º %d 2º %d 3º %d 4º %d // Código: %d - Nome: %s \n", notas[i][1], notas[i][2], notas[i][3], notas[i][4], i, alunos[i]);
 		}
 		
-		entrada.close();
-		
-		System.out.println(notas);
-		System.out.println(alunos);
-		
+		scanner.close();
 	}
 }
-
-*/
-
