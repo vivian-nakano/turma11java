@@ -1,4 +1,4 @@
-package lista5encapherança;
+package lista5heranca_encap;
 
 public class Fornecedor extends Pessoa {
 	
