@@ -1,4 +1,4 @@
-package lista4poo;
+package lista4objetos;
 
 public class Cliente {
 	
