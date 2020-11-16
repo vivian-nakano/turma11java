@@ -24,8 +24,24 @@ public class EcommerceBrechoStore {
 				// variaveis
 				String nomeCliente;
 				char genero = ' ', continua = ' ';
-				System.out.print("***===== Bem vinde ao Brechó Store! ======***\n");
-				System.out.print("\n***=====Aqui você encontra vestimentas super preservadas, baratas e estilosas!=====***\n");
+				System.out.print("      ════════ BEM VINDO (A) AO BRECHÓ STORE ════════\n");
+				
+				System.out.println("                       ___ ___                          ");
+				System.out.println("                     /| | | | |\\                        ");
+				System.out.println("                    /_| ´ |.` |_\\                     ");
+				System.out.println("                      |   |.  |                         ");
+				System.out.println("                      |   |.  |                         ");
+				System.out.println("                      |___|.__|                         ");
+				    
+				
+				System.out.print("\n☼ Aqui você encontra peças estilosas, baratas e preservadas! ☼\n");
+				
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				
 				System.out.print("\nPor favor, qual seu nome? ");
 				nomeCliente = tec.next();
 				System.out.print(
@@ -141,19 +157,32 @@ public class EcommerceBrechoStore {
 						subtotal = subtotal + (precos[9]* quant);
 						System.out.println("Subtotal: " + subtotal);
 						carrinho.add(produtos[codigoDigitado - 1]);
-					} else {
-						System.out.println("Você digitou um código inválido, tente novamente.");
-					}
+					} 
+					
 				} while (codigoDigitado != 0);
 				System.out.println();
 				System.out.println("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓-Sua compra foi finalizada-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n");
 				System.out.println("O valor total da compra é: R$ " + subtotal);
 				System.out.println();
+				
+				try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				
 				System.out.println("Qual será sua opção de pagamento? ");
 				System.out.println("\nOpção 1 - Dinheiro ou cartão de débito à vista com 10% de desconto.");
 				System.out.println("\nOpção 2 - Cartão de crédito em 1x sem juros.");
 				System.out.println("\nOpção 3 - Cartão de crédito em 2x sem juros.");
 				System.out.println("\nOpção 4 - Cartão de crédito em 3x sem juros.");
+				
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				
 				System.out.println("\n▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓-Digite a opção de pagamento-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
 				System.out.print("\nDigite apenas o número da sua opção ====> ");
 				opcaoPagamento = tec.nextByte();
@@ -185,6 +214,13 @@ public class EcommerceBrechoStore {
 				} else {
 					System.out.println("\nVocê digitou opção de pagamento inválida. Tente novamente.");
 				}
+				
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				
 				System.out.println("\n\nAgradeçemos por comprar no Brechó Store! <3 Segue sua nota fiscal.");
 				System.out.println("\n▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓-NOTA FISCAL-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
 				System.out.printf("\nNome cliente: %s", nomeCliente);
